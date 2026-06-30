@@ -64,7 +64,7 @@ public class StaticPageGenerator {
 <body>
     <div class="container">
         <header>
-            <h1>Gestión de Productos</h1>
+            <h1>Gestión dess Productos</h1>
             <nav>
                 <button class="nav-btn active" onclick="showSection('products')">Productos</button>
                 <button class="nav-btn" onclick="showSection('register')">Registro</button>
