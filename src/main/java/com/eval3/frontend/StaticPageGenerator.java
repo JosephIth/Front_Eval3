@@ -156,7 +156,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #ff0000 0%, #33ff00 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 30px;
     text-align: center;
