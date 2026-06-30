@@ -11,6 +11,10 @@ public class StaticPageGenerator {
     private static final String OUTPUT_DIR = "output";
 
     private static String getEnv(String key, String defaultValue) {
+        String systemEnv = System.getenv(key);
+        if (systemEnv != null && !systemEnv.trim().isEmpty()) {
+            return systemEnv.trim();
+        }
         Path envPath = Paths.get(".env");
         if (Files.exists(envPath)) {
             try {
@@ -137,7 +141,7 @@ public class StaticPageGenerator {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #d10b0b 0%, #02ff02 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -147,12 +151,12 @@ body {
     margin: 0 auto;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(255, 0, 234, 0.2);
     overflow: hidden;
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff0000 0%, #33ff00 100%);
     color: white;
     padding: 30px;
     text-align: center;
