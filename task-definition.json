@@ -6,12 +6,12 @@
   ],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::687545780788:role/LabRole",
-  "taskRoleArn": "arn:aws:iam::687545780788:role/LabRole",
+  "executionRoleArn": "arn:aws:iam::588103055400:role/LabRole",
+  "taskRoleArn": "arn:aws:iam::588103055400:role/LabRole",
   "containerDefinitions": [
     {
       "name": "frontend-container",
-      "image": "687545780788.dkr.ecr.us-east-1.amazonaws.com/product-frontend:latest",
+      "image": "588103055400.dkr.ecr.us-east-1.amazonaws.com/product-frontend:latest",
       "portMappings": [
         {
           "containerPort": 80,
